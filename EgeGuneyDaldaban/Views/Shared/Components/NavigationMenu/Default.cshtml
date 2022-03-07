@@ -1,0 +1,25 @@
+﻿@model IEnumerable<String>
+ 
+<div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+  
+    <ul class="navbar-nav flex-grow-1"> 
+     
+        @foreach (string menuItem in Model)
+{       
+           
+            <li class="nav-item">     
+             
+                <a class="nav-link text-dark" asp-area="" asp-controller="Character" asp-action="@menuItem">      
+               
+                     @menuItem                
+           
+             
+                 </a>     
+       
+           
+            </li>}     
+    
+    
+    </ul> 
+ 
+</div>
